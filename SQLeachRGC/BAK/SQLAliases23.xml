@@ -1,0 +1,1712 @@
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7fbf</string>
+        </identifier>
+        <name>&#x412;&#x435;&#x43b;&#x438;&#x43a;&#x438;&#x439; &#x41d;&#x43e;&#x432;&#x433;&#x43e;&#x440;&#x43e;&#x434; 192.168.53.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.53.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f50</string>
+        </identifier>
+        <name>&#x41e;&#x43c;&#x441;&#x43a; 10.142.0.18</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.142.0.18:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f28</string>
+        </identifier>
+        <name>&#x423;&#x43b;&#x44c;&#x44f;&#x43d;&#x43e;&#x432;&#x441;&#x43a; 192.168.73.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.73.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f30</string>
+        </identifier>
+        <name>&#x421;&#x442;&#x430;&#x432;&#x440;&#x43e;&#x43f;&#x43e;&#x43b;&#x44c; 192.168.207.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.207.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f32</string>
+        </identifier>
+        <name>&#x421;&#x43c;&#x43e;&#x43b;&#x435;&#x43d;&#x441;&#x43a; 192.168.67.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.67.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f60</string>
+        </identifier>
+        <name>&#x41a;&#x43e;&#x43c;&#x438; 192.168.111.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.111.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-54f93c50:13aab9104e7:-7f70</string>
+        </identifier>
+        <name>&#x41a;&#x443;&#x440;&#x433;&#x430;&#x43d; 10.4.145.31</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.4.145.31:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f62</string>
+        </identifier>
+        <name>&#x41a;&#x438;&#x440;&#x43e;&#x432; 10.10.143.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.143.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f53</string>
+        </identifier>
+        <name>&#x41d;&#x422;&#x42d;&#x41a; 10.141.0.10</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.141.0.10:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f64</string>
+        </identifier>
+        <name>&#x41a;&#x435;&#x43c;&#x435;&#x440;&#x43e;&#x432;&#x43e; (&#x41a;&#x443;&#x437;&#x431;&#x430;&#x441;&#x441;) 192.168.42.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.42.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-4</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f38</string>
+        </identifier>
+        <name>&#x421;&#x435;&#x432;&#x435;&#x440;&#x420;&#x435;&#x433;&#x438;&#x43e;&#x43d;&#x413;&#x410;&#x417; 192.168.72.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:oracle:thin:@192.168.72.50:1521:ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f66</string>
+        </identifier>
+        <name>&#x41a;&#x430;&#x43b;&#x443;&#x433;&#x430; 192.168.40.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.40.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f79</string>
+        </identifier>
+        <name>&#x412;&#x43e;&#x43b;&#x43e;&#x433;&#x434;&#x430; 192.168.35.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.35.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-54f93c50:13aab9104e7:-7f68</string>
+        </identifier>
+        <name>&#x41d;&#x43e;&#x432;&#x43e;&#x441;&#x438;&#x431;&#x438;&#x440;&#x441;&#x43a; 10.10.54.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.54.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f20</string>
+        </identifier>
+        <name>&#x42f;&#x440;&#x43e;&#x441;&#x43b;&#x430;&#x432;&#x43b;&#x44c; 192.168.76.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.76.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f4f</string>
+        </identifier>
+        <name>&#x41e;&#x440;&#x435;&#x43b; 192.168.57.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.57.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f2a</string>
+        </identifier>
+        <name>&#x422;&#x443;&#x43b;&#x430; 192.168.71.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.71.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f22</string>
+        </identifier>
+        <name>&#x427;&#x443;&#x432;&#x430;&#x448;&#x420;&#x413; 192.168.21.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.21.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f2c</string>
+        </identifier>
+        <name>&#x422;&#x432;&#x435;&#x440;&#x44c; 192.168.69.51</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.69.51:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f24</string>
+        </identifier>
+        <name>&#x423;&#x444;&#x430; 172.16.0.18</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://172.16.0.18:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f4b</string>
+        </identifier>
+        <name>&#x41f;&#x435;&#x43d;&#x437;&#x430; 192.168.58.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.58.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7fcd</string>
+        </identifier>
+        <name>&#x418;&#x436;&#x435;&#x432;&#x441;&#x43a; 192.168.18.51</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.18.51:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f2e</string>
+        </identifier>
+        <name>&#x422;&#x430;&#x43c;&#x431;&#x43e;&#x432; 10.4.168.216</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.4.168.216:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f4d</string>
+        </identifier>
+        <name>&#x41e;&#x440;&#x435;&#x43d;&#x431;&#x443;&#x440;&#x433; 10.10.56.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.56.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7fca</string>
+        </identifier>
+        <name>&#x410;&#x441;&#x442;&#x440;&#x430;&#x445;&#x430;&#x43d;&#x44c; 192.168.30.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.30.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f7b</string>
+        </identifier>
+        <name>&#x412;&#x43e;&#x43b;&#x433;&#x43e;&#x433;&#x440;&#x430;&#x434; 10.10.34.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.34.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f7d</string>
+        </identifier>
+        <name>&#x412;&#x43b;&#x430;&#x434;&#x438;&#x43c;&#x438;&#x440; 192.168.33.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.33.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f5e</string>
+        </identifier>
+        <name>&#x41a;&#x43e;&#x441;&#x442;&#x440;&#x43e;&#x43c;&#x430; 192.168.44.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.44.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7fc3</string>
+        </identifier>
+        <name>&#x411;&#x440;&#x44f;&#x43d;&#x441;&#x43a; 172.17.1.10</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://172.17.1.10/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f40</string>
+        </identifier>
+        <name>&#x420;&#x43e;&#x441;&#x442;&#x43e;&#x432; 192.168.61.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.61.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f5b</string>
+        </identifier>
+        <name>&#x41a;&#x440;&#x430;&#x441;&#x43d;&#x43e;&#x434;&#x430;&#x440; 192.168.123.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.123.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f44</string>
+        </identifier>
+        <name>&#x41f;&#x441;&#x43a;&#x43e;&#x432; 192.168.60.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.60.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-4</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f49</string>
+        </identifier>
+        <name>&#x41f;&#x435;&#x440;&#x43c;&#x44c; 10.142.0.38</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:oracle:thin:@10.142.0.38:1521:ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f68</string>
+        </identifier>
+        <name>&#x41a;&#x430;&#x437;&#x430;&#x43d;&#x44c; 10.10.112.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.112.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f75</string>
+        </identifier>
+        <name>&#x418;&#x432;&#x430;&#x43d;&#x43e;&#x432;&#x43e; 192.168.2.5</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.2.5/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f77</string>
+        </identifier>
+        <name>&#x412;&#x43e;&#x440;&#x43e;&#x43d;&#x435;&#x436; 10.10.36.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.36.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f71</string>
+        </identifier>
+        <name>&#x41a;&#x430;&#x432;&#x43a;&#x430;&#x437; 192.168.26.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.26.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7f73</string>
+        </identifier>
+        <name>&#x419;&#x43e;&#x448;&#x43a;&#x430;&#x440;-&#x41e;&#x43b;&#x430; 10.145.0.2</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.145.0.2:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f3c</string>
+        </identifier>
+        <name>&#x421;&#x430;&#x43c;&#x430;&#x440;&#x430; 192.168.50.2</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.50.2/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-54f93c50:13aab9104e7:-7f6a</string>
+        </identifier>
+        <name>&#x41c;&#x43e;&#x440;&#x434;&#x43e;&#x440;&#x438;&#x44f;&#x420;&#x413; (&#x421;&#x430;&#x440;&#x430;&#x43d;&#x441;&#x43a;)</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.4.213.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f3a</string>
+        </identifier>
+        <name>&#x421;&#x430;&#x440;&#x430;&#x442;&#x43e;&#x432; 192.168.64.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.64.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-54f93c50:13aab9104e7:-7f6c</string>
+        </identifier>
+        <name>&#x41b;&#x438;&#x43f;&#x435;&#x446;&#x43a; 192.168.48.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.48.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-3002041e:13a97b42610:-7fc6</string>
+        </identifier>
+        <name>&#x411;&#x435;&#x43b;&#x433;&#x43e;&#x440;&#x43e;&#x434; 192.168.31.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.31.50:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-54f93c50:13aab9104e7:-7f6e</string>
+        </identifier>
+        <name>&#x41a;&#x443;&#x440;&#x441;&#x43a; 192.168.46.12</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://192.168.46.12:1433/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-25</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>67ed3250:13aabac4824:-7f3e</string>
+        </identifier>
+        <name>&#x420;&#x44f;&#x437;&#x430;&#x43d;&#x44c; 10.10.62.50</name>
+        <password>test</password>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <allSchemaProceduresNotToBeCached Indexed="true"/>
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <expectsSomeCachedData>false</expectsSomeCachedData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:jtds:sqlserver://10.10.62.50/ascug</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>ascug</userName>
+    </Bean>
+</Beans>

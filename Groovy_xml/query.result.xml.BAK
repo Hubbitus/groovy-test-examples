@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<template>
+	<errors>
+		<error object="common">
+			<msg>Object not found</msg>
+			<msg lang="ru">[%1$s] не найдено</msg>
+			<template><![CDATA[
+${name}<UID:${obj.id}, Код:${obj.code}, ВнешнийКлюч:${obj.foreignKey}, "${obj.name}", Удалён:${it.deleted ? "<a class="help deleted" href="#help_dvis">да</a>" : "нет"}>
+			]]></template>
+		</error>
+
+		<error object="PointConnect">
+			<template><![CDATA[
+${name}<UID:${obj.id}, Код:${obj.code}, ВнешнийКлюч:${obj.foreignKey}, "${obj.name}", ВыходГРС:${obj.idGdsOut}, Удалён:${it.deleted ? "<a class="help deleted" href="#help_dvis">да</a>" : "нет"}>
+		]]></template>
+		</error>
+
+		<error object="PointConnect" code="901">
+			<template><![CDATA[
+${name}<UID:${obj.id}, Код:${obj.code}, ВнешнийКлюч:${obj.foreignKey}, "${obj.name}", ВыходГРС:${obj.idGdsOut}, Удалён:${it.deleted ? "<a class="help deleted" href="#help_dvis">да</a>" : "нет"}>
+			]]></template>
+		</error>
+	</errors>
+</template>

@@ -1,0 +1,47 @@
+#!/bin/env groovy
+
+// Reported: http://jira.codehaus.org/browse/GROOVY-5684
+
+class Base{
+public static Class cls = Base;
+
+	public static String getTestName(){
+		return "=${cls.simpleName}=";
+	}
+
+	public static void init(ths){
+		ths.metaClass.static.init = {
+			ths.cls.metaClass.static.getTestName = ths.&getTestName;
+		};
+		ths.init();
+	}
+}
+
+class A extends Base{
+public static Class cls = Integer;
+
+//	public static String getTestName(){
+//		return "AAA=${cls.simpleName}=AAA";
+//	}
+
+	static{
+		init(this);
+	}
+}
+
+class B extends Base{
+public static Class cls = String;
+
+	public static String getTestName(){
+		return "BBB=${cls.simpleName}=BBB";
+	}
+
+	static{
+		init(this);
+	}
+}
+
+A a = new A();
+B b = new B();
+
+println ( [a: Integer.getTestName(), b: String.getTestName()] );

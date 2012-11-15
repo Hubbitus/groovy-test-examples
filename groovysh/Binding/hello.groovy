@@ -1,0 +1,1 @@
+output = "Hello, ${input}!"

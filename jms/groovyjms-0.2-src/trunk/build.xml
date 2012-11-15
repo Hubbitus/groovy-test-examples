@@ -1,0 +1,82 @@
+<project name="groovyjms" basedir="." default="jar">
+
+  <!--
+  ant -Dtestclass=test.EMCTests
+  -->
+
+  <property environment="env" />
+
+  <path id="build.classpath">
+    <fileset dir="${env.GROOVY_HOME}/lib">
+      <include name="**/*.jar" />
+    </fileset>
+    <fileset dir="lib">
+      <include name="**/*.jar" />
+    </fileset>
+  </path>
+
+  <target name="clean" description="cleans out generated directories">
+    <delete dir="bin" />
+    <delete dir="reports" />
+  </target>
+
+  <target name="compile" description="compiles source code">
+    <mkdir dir="bin/test" />
+    
+    <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc"
+      classpathref="build.classpath" />
+    
+    <groovyc srcdir="src" destdir="bin">
+      <classpath>
+        <path refid="build.classpath" />
+      </classpath>
+      <javac />
+    </groovyc>
+    
+    <groovyc srcdir="test" destdir="bin/test">
+      <classpath>
+        <path refid="build.classpath" />
+        <pathelement location="bin" />
+      </classpath>
+      <javac />
+    </groovyc>
+  </target>
+
+  <target name="test" depends="compile" description="run junit tests">
+    <mkdir dir="reports" />
+
+    <junit fork="yes" printsummary="yes" haltonfailure="no" haltonerror="no"
+      failureproperty="fail" errorproperty="error">
+      <classpath>
+        <path refid="build.classpath" />
+        <pathelement location="bin" />
+	<pathelement location="bin/test" />
+      </classpath>
+
+      <formatter type="xml"/>
+
+      <test if="testclass" name="${testclass}" todir="reports" />
+ 
+      <batchtest unless="testclass" fork="yes" todir="reports">
+        <fileset dir="bin/test">
+          <include name="**/*Test.*"/>
+        </fileset>
+      </batchtest>
+    </junit>
+
+    <junitreport todir="reports">
+      <fileset dir="reports">
+        <include name="TEST-*.xml" />
+      </fileset>
+      <report format="frames" todir="reports/html" />
+    </junitreport>
+
+    <fail if="fail" message="--- FAILED ---" />
+    <fail if="error" message="--- ERROR ---" />
+  </target>
+
+  <target name="jar" depends="test" description="package jar file">
+    <jar destfile="dest/groovyjms.jar" basedir="bin" excludes="test/**" />
+  </target>
+</project>
+

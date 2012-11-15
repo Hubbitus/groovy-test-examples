@@ -1,0 +1,77 @@
+#!/bin/env groovy
+
+// Reported: http://jira.codehaus.org/browse/GROOVY-5684
+
+class Base{
+public static Class cls = Base;
+
+	public static String getTestName(){
+		println "this=$this; cls=$cls";
+		return "=${cls.simpleName}=";
+	}
+
+	public static void init(ths){
+		def gTN = {
+		println "init(ths): this=$this; cls=$cls";
+		return "=${cls.simpleName}=";
+	}
+	
+		ths.metaClass.static.init = {
+//			ths.metaClass.static.getTestName = this.&getTestName;
+//			ths.metaClass.static.getTestName = gTN;
+
+
+			ths.metaClass.'static'.invokeMethod = { String name, args ->
+				def metaMethod = delegate.metaClass.getStaticMetaMethod(name, args);
+println "invokeMethod:0: name=$name; args: $args; metaMethod=$metaMethod; baseMetaMethod: ${this.metaClass.getStaticMetaMethod(name, args)}"
+				def result;
+				if(metaMethod) result = metaMethod.invoke(delegate,args);
+				else {
+					delegate.metaClass.static.getTestName = this.metaClass.getStaticMetaMethod(name, args);
+//					metaMethod = delegate.metaClass.getStaticMetaMethod(name, args);
+println "invokeMethod:1: name=$name; args: $args; metaMethod=$metaMethod; baseMetaMethod: ${this.metaClass.getStaticMetaMethod(name, args)}"
+					result = metaMethod.invoke(delegate,args);
+				}
+				result
+			}
+
+		};
+		ths.init();
+	}
+}
+
+class A extends Base{
+public static Class cls = Integer;
+
+//	public static String getTestName(){
+//		return "AAA=${cls.simpleName}=AAA";
+//	}
+
+	static{
+		init(this);
+	}
+}
+
+class B extends Base{
+public static Class cls = String;
+
+	public static String getTestName(){
+		return "BBB=${cls.simpleName}=BBB";
+	}
+
+	static{
+		init(this);
+	}
+}
+
+/*
+A a = new A();
+B b = new B();
+
+println ( [a: Integer.getTestName(), b: String.getTestName()] );
+*/
+
+//println new B().getTestName();
+//println new A().getTestName();
+println B.getTestName();
+println A.getTestName();

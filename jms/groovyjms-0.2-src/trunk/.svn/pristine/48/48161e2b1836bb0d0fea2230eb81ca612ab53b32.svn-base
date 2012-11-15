@@ -1,0 +1,25 @@
+TODO list
+
+Project
+1. add a build file
+ - either ant or gant (preferred, hope it's not too complex)
+
+2. generate GroovyDoc in the build
+
+3. do a simple benchmark and profiling
+
+
+Application
+ - fix close and autoclose, do not close if there is running listener
+ - implement a JMSPool
+
+
+Dependency
+
+1. Remove Jencks source code from this project
+
+Refactoring Plan
+ - the hierarchy of JMS and JMSPool
+ - store connection and session in a JMS, store the JMS in threadlocal; use of JMSCategory will trigger a creation of
+   JMS instance in the threadlocal
+ - a JMS act as a container that have a start, stop lifecycle
