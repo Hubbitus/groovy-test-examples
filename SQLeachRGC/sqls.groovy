@@ -71,8 +71,9 @@ class SQLExecute implements Runnable {
 	Node drivers;
 	Node obj;
 	String sql;
-	def rows;
+	List rows;
 	int runNo;
+	String error = '';
 
 	static synchronized out = System.out.&println;
 
@@ -90,14 +91,14 @@ class SQLExecute implements Runnable {
 		try{
 			Sql sqlConnect = Sql.newInstance(obj.url.text(), obj.userName.text(), obj.password.text(), getDriverStr(drivers, obj));
 			//	println sql.rows("SELECT * FROM ext_system WHERE  system_code LIKE '%.imus' AND system_code NOT IN ('mrgmain.imus', 'antmain.imus')").join('->\n')
-//			rows = sqlConnect.rows(sql)
-			rows = sqlConnect.execute(sql)
+			rows = sqlConnect.rows(sql)
+//			rows = sqlConnect.execute(sql) // DML
 		}
 		catch(java.sql.SQLException e){
-			rows = ['Exception happened during connect or query: ' + e];
+			error = 'Exception happened during connect or query: ' + e;
 		}
 		catch(Exception all){
-			rows = ['Unknown Exception happened during connect or query: ' + all];
+			error = 'Unknown Exception happened during connect or query: ' + all;
 		}
 
 		out("DEBUG: ($runNo)${obj.name.text()}: result: \n${rows.join('\n')}");
@@ -112,43 +113,40 @@ List results = [];
 
 SQL = """
 SELECT *
-FROM free_queue
-WHERE
-	NOT (free_queue_id = 1 AND grafik_num = 1 AND free_queue_num = 1 AND comm = 'Гр.№1 - 1 Очередь')
-	 AND
-	NOT (free_queue_id = 2 AND grafik_num = 1 AND free_queue_num = 2 AND comm = 'Гр.№1 - 2 Очередь')
-	 AND
-	NOT (free_queue_id = 3 AND grafik_num = 1 AND free_queue_num = 3 AND comm = 'Гр.№1 - 3 Очередь')
-	 AND
-	NOT (free_queue_id = 4 AND grafik_num = 1 AND free_queue_num = 4 AND comm = 'Гр.№1 - 4 Очередь')
-	 AND
-	NOT (free_queue_id = 5 AND grafik_num = 2 AND free_queue_num = 1 AND comm = 'Гр.№2 - 1 Очередь, 20%')
-	 AND
-	NOT (free_queue_id = 6 AND grafik_num = 2 AND free_queue_num = 2 AND comm = 'Гр.№2 - 2 Очередь, 50%')
-	 AND
-	NOT (free_queue_id = 7 AND grafik_num = 2 AND free_queue_num = 3 AND comm = 'Гр.№2 - 3 Очередь, 80%')
+FROM
+	(
+		SELECT COUNT(*) as gco_gas_free_COUNT
+		FROM gco_gas_free
+		WHERE free_queue_id IN (
+			SELECT free_queue_id
+			FROM free_queue fq
+			WHERE
+				NOT (free_queue_id = 1 AND grafik_num = 1 AND free_queue_num = 1 AND comm = 'Гр.№1 - 1 Очередь')
+				AND NOT (free_queue_id = 2 AND grafik_num = 1 AND free_queue_num = 2 AND comm = 'Гр.№1 - 2 Очередь')
+				AND NOT (free_queue_id = 3 AND grafik_num = 1 AND free_queue_num = 3 AND comm = 'Гр.№1 - 3 Очередь')
+				AND NOT (free_queue_id = 4 AND grafik_num = 1 AND free_queue_num = 4 AND comm = 'Гр.№1 - 4 Очередь')
+				AND NOT (free_queue_id = 5 AND grafik_num = 2 AND free_queue_num = 1 AND comm = 'Гр.№2 - 1 Очередь, 20%')
+				AND NOT (free_queue_id = 6 AND grafik_num = 2 AND free_queue_num = 2 AND comm = 'Гр.№2 - 2 Очередь, 50%')
+				AND NOT (free_queue_id = 7 AND grafik_num = 2 AND free_queue_num = 3 AND comm = 'Гр.№2 - 3 Очередь, 80%')
+		)
+	) ggf
+	CROSS JOIN (
+		SELECT COUNT(*) as gas_free_reg_fact_COUNT
+		FROM gas_free_reg_fact
+		WHERE free_queue_id IN (
+			SELECT free_queue_id
+			FROM free_queue fq
+			WHERE
+				NOT (free_queue_id = 1 AND grafik_num = 1 AND free_queue_num = 1 AND comm = 'Гр.№1 - 1 Очередь')
+				AND NOT (free_queue_id = 2 AND grafik_num = 1 AND free_queue_num = 2 AND comm = 'Гр.№1 - 2 Очередь')
+				AND NOT (free_queue_id = 3 AND grafik_num = 1 AND free_queue_num = 3 AND comm = 'Гр.№1 - 3 Очередь')
+				AND NOT (free_queue_id = 4 AND grafik_num = 1 AND free_queue_num = 4 AND comm = 'Гр.№1 - 4 Очередь')
+				AND NOT (free_queue_id = 5 AND grafik_num = 2 AND free_queue_num = 1 AND comm = 'Гр.№2 - 1 Очередь, 20%')
+				AND NOT (free_queue_id = 6 AND grafik_num = 2 AND free_queue_num = 2 AND comm = 'Гр.№2 - 2 Очередь, 50%')
+				AND NOT (free_queue_id = 7 AND grafik_num = 2 AND free_queue_num = 3 AND comm = 'Гр.№2 - 3 Очередь, 80%')
+		)
+	) gfrf
 """;
-
-SQL = """
-SELECT COUNT(*) dict
-FROM free_queue fq
-	JOIN (
-		SELECT 1 AS free_queue_id,1 AS grafik_num,1 AS free_queue_num,'Гр.№1 - 1 Очередь' AS comm
-		UNION ALL
-		SELECT 2 AS free_queue_id,1 AS grafik_num,2 AS free_queue_num,'Гр.№1 - 2 Очередь' AS comm
-		UNION ALL
-		SELECT 3 AS free_queue_id,1 AS grafik_num,3 AS free_queue_num,'Гр.№1 - 3 Очередь' AS comm
-		UNION ALL
-		SELECT 4 AS free_queue_id,1 AS grafik_num,4 AS free_queue_num,'Гр.№1 - 4 Очередь' AS comm
-		UNION ALL
-		SELECT 5 AS free_queue_id,2 AS grafik_num,1 AS free_queue_num,'Гр.№2 - 1 Очередь, 20%' AS comm
-		UNION ALL
-		SELECT 6 AS free_queue_id,2 AS grafik_num,2 AS free_queue_num,'Гр.№2 - 2 Очередь, 50%' AS comm
-		UNION ALL
-		SELECT 7 AS free_queue_id,2 AS grafik_num,3 AS free_queue_num,'Гр.№2 - 3 Очередь, 80%' AS comm
-	) dict
-	ON (dict.free_queue_id = fq.free_queue_id AND dict.grafik_num = fq.grafik_num AND dict.free_queue_num = fq.free_queue_num AND dict.comm = fq.comm)
-"""
 
 //println objects.dump()
 objects.Bean.eachWithIndex{obj, idx->
@@ -187,7 +185,14 @@ pool.awaitTermination( 100, TimeUnit.SECONDS );
 println "RESULTS:"
 results.each{
 //	println "$it.name ($it.runNo) : $it.version"
-//	if (it.rows.size() > 0)
-	if (it.rows[0].dict < 7)
-	println "$it.name ($it.runNo):\n ${it.rows.join('\n')}"
+//	if (it.rows[0].dict < 7)
+//	if (it.rows.size() > 0 || it.error){
+	if (it.rows?.getAt(0)?.gco_gas_free_COUNT > 0 || it.rows?.getAt(0)?.gas_free_reg_fact_COUNT > 0 || it.error){
+		if (it.error){
+			System.err.println(it.error);System.err.flush();
+		}
+		else{
+			println "$it.name ($it.runNo):\n${it.rows.join('\n')}"
+		}
+	}
 }
