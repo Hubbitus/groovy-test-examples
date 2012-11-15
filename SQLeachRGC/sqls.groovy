@@ -150,15 +150,6 @@ FROM free_queue fq
 	ON (dict.free_queue_id = fq.free_queue_id AND dict.grafik_num = fq.grafik_num AND dict.free_queue_num = fq.free_queue_num AND dict.comm = fq.comm)
 """
 
-// http://blog.sqlauthority.com/2010/07/20/sql-server-select-from-dual-dual-equivalent/
-//SQL = """
-//CREATE TABLE DUAL(
-//	DUMMY VARCHAR(1)
-//)
-//"""
-
-SQL = "INSERT INTO DUAL (DUMMY) VALUES ('X')"
-
 //println objects.dump()
 objects.Bean.eachWithIndex{obj, idx->
 //objects.Bean[0..2].eachWithIndex{obj, idx->
