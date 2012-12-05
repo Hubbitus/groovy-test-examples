@@ -100,7 +100,7 @@ class ExcelBuilder {
 LinkedHashMap processXlsFile(xlsfile){
 	def xls = new ExcelBuilder(xlsfile);
 
-	def res = [uugName: '', gdsName: '', params: [] as Set<String>];
+	def res = [uugName: '', gdsName: '', params: [] as Set<String>, model: [:]];
 
 	xls.eachLine([sheet: 0]) {HSSFRow row->
 		switch(cell(0)){
@@ -115,9 +115,12 @@ LinkedHashMap processXlsFile(xlsfile){
 
 	xls.eachLine([labels: true, sheet: 1]) {HSSFRow row->
 	//	println "Device = $Device; Tag name: ${cell('Tag name')};"
-		if ( (cell('Tag name') =~ /$Device\.dev\./) ){
+		if( (cell('Tag name') =~ /$Device\.dev\./) ){
 	//		params << "$gdsName;$uugName.${(cell('Tag name') ==~ /((?:[^\.]\.){2}[^\.])/)[0][1]}";
 			res.params << "${res.gdsName};${res.uugName}.${(cell('Tag name') =~ /([^.]+\.){2}[^.]+/)[0][0]}";
+		}
+		if( (cell('Tag name') =~ /$Device\.Info\.Korr/ ) ){
+			res.model << [ (Device): cell('value') ];
 		}
 	}
 
@@ -127,7 +130,8 @@ LinkedHashMap processXlsFile(xlsfile){
 //String testfile = '/home/pasha/temp/2012-09-14_GTE_MI_SELEN.xls'
 //println processXlsFile(testfile);
 
-def dir = '/mnt/net/p/users/frolova/Структура/';
+//def dir = '/mnt/net/p/users/frolova/Структура/';
+def dir = '/home/pasha/temp/Frolova_Ufa_Tg/Структура/';
 def infotehFile = '/home/pasha/temp/Измерительный трубопровод УИ газа.xls';
 
 def xlsInfoteh = new ExcelBuilder(infotehFile);
@@ -173,8 +177,13 @@ new File(dir).eachFileMatch(FileType.FILES, ~/(?i).+\.xls/) {File file->
 	try{
 		def param = processXlsFile(file.absolutePath);
 
+		param.model.sort().each{p->
+			println "${file.name}:${p}";
+		}
+
+// Try automap to Infoteh
+/*			def infotehFound = infotehData.findAll{
 		param.params.sort().eachWithIndex{p, ind->
-			def infotehFound = infotehData.findAll{
 				try{
 					(
 					it.'Наименование'.split(/,/)[1].replaceAll(/ /, '').trim() == param.gdsName.replace(/ГРС(?:\W*\d)? /, '').replaceAll(/ /, '').trim()
@@ -191,12 +200,12 @@ new File(dir).eachFileMatch(FileType.FILES, ~/(?i).+\.xls/) {File file->
 			else{
 
 			}
-/*
+*//*
 		println "\tInfoteh data:"
 		infotehFound.eachWithIndex{entry, i ->
 			println "\t\t$i) ${entry}"
 		}
-*/
+*//*
 
 //			println "${file.name};$p";
 			try{
@@ -207,6 +216,7 @@ new File(dir).eachFileMatch(FileType.FILES, ~/(?i).+\.xls/) {File file->
 				println "${file.name};$p;No infoteh record found(${param.params.size()})";
 			}
 		};
+*/
 	}
 	catch(Exception e){
 		println "Error happened process file ${file}: " + e;
