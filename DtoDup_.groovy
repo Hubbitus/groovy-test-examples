@@ -16,12 +16,9 @@ class T {
 
 List l = [ new T(1, 'n1', 'f1'), new T(2, 'n2', 'f2'), new T(3, 'n3', 'f3'), new T(1, 'n2', 'f1'), new T(7, 'n7', 'f7'), new T(1, 'n1', 'f2'), new T(2, 'n2', 'f22'), new T(1, 'n1', 'f1') ]
 
-//l.groupBy{ it.id }.groupBy{ it.value.size() }
-//l.groupBy{ it.id }.findAll{ 1 == it.value.size() }
+print l.groupBy{ it.id }.findAll{ it.value.size() > 1 }[1].sort()
+//print l.groupBy{ it.id }.findAll{ 1 == it.value.size() }*.value.flatten()
 
-/**
- * Created by pasha on 10/3/13.
- */
 class DtoDup {
     public String id;
     public String idFieldName = 'id';
@@ -42,7 +39,7 @@ class DtoDup {
             ].findAll{ 'null' != it }.join(',') + ']';
     }
 
-    public def fieldsDiff(){
+    public Map<String,List> fieldsDiff(){
         dupes[0].properties.collectEntries{
             List uvals = dupes*."${it.key}".unique();
             [ (it.key): uvals.size() > 1 ? uvals : null ]
@@ -61,3 +58,14 @@ DtoDup dd = new DtoDup(id: m.key, dupes: m.value);
 
 //List res = 
 //dupes[0].properties.collectEntries{  }
+
+class A{
+    public static some(){ 'A' }
+}
+
+class B extends A{
+    @Override
+    public static String some(){ 'B' }
+}
+
+B.some()
