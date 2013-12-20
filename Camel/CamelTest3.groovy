@@ -16,7 +16,7 @@ import org.apache.camel.language.groovy.GroovyRouteBuilder
 def camelContext = new DefaultCamelContext()
 camelContext.addRoutes(new GroovyRouteBuilder() {
     def void configure() {
-//        from("imap://mail.spb.ant-inform.ru?username=p.alexeev@spb.ant-inform.ru&password=pasha_test&folderName=INBOX.test&consumer.delay=10000")
+//        from("imap://mail.spb.ant-inform.ru?username=p.alexeev@spb.ant-inform.ru&password=pasha_test&folderName=INBOX.Zabbix-alerts.wait.2013-10-18 Олег&consumer.delay=10000")
         from('imap://mail.spb.ant-inform.ru?username=imus.monitor@spb.ant-inform.ru&password=lWX9Dta8&folderName=INBOX&consumer.delay=10000')
 //        .filter {
 //          true
