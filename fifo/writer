@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for (( i=0; i < 5; i++ )) do
+	echo -e "$$ - $i one\n$$ - $i two\n$$ - $i three\n$$ - $i four\n$$ - $i five" | tee -a fifo;
+	usleep 200;
+done

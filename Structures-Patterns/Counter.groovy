@@ -32,7 +32,7 @@ private Map<String, ArrayList> map = [:];
                 case Number:
                     this.map[it.key] = [ it.value ];
                 break;
-                
+
                 case String:
                     this.map[it.key] = [ 0, it.value ];
                 break;
@@ -50,6 +50,7 @@ private Map<String, ArrayList> map = [:];
     }
 
     public void setProperty(String key, value){
+        if (! map[key]) map[key] = [0];
         map[key][0] = value;
     }
 
@@ -79,7 +80,9 @@ c.one
 
 //c.six++;
 
-c."some seven initiated counter" += 7;
+//c."some seven initiated counter" += 7;
+//c."some seven initiated counter" = 7;
+++c."some seven initiated counter";
 
 println c;
 //println c.inline();

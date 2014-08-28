@@ -2,13 +2,13 @@ class T{
     public String severity;
     public String code;
     public boolean dvis;
-    
+
     public T(String severity, String code, boolean dvis){
     this.severity = severity;
     this.code = code;
     this.dvis = dvis;
     }
-    
+
     public String toString(){
     return "T<severity: $severity, code: $code, dvis: $dvis>"
     }
