@@ -41,18 +41,19 @@ class B extends A{
     public String str = "B";
 
 //    B(Map map){ super(map); }
-}
 
+    public returnStr = {->
+        return super.returnStr() + ':B';
+    }
+}
 
 String str = 'Outer str'
 def String getT(){ return "_outer_:getT()"; }
 
-A a = new A([:]);
+A a = new A();
 //a.returnStr()
-B b = new B([:]);
+B b = new B();
 B bb = new B(returnStr: { str + ":" + getT()})
-bb.returnStr.delegate = bb
-bb.returnStr.resolveStrategy = Closure.DELEGATE_ONLY
-//b.returnStr.resolveStrategy = Closure.DELEGATE_FIRST
 //bb.returnStr.delegate = bb
-[ a, b, bb, a.returnStr(), b.returnStr(), bb.returnStr(), b.returnStr.resolveStrategy, bb.returnStr.delegate ]
+//bb.returnStr.resolveStrategy = Closure.DELEGATE_ONLY
+[ a, b, bb, a.returnStr(), b.returnStr(), bb.returnStr(), b.returnStr.resolveStrategy, bb.returnStr.delegate,  ]
