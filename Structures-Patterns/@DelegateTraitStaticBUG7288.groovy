@@ -3,11 +3,7 @@ import groovy.transform.TupleConstructor
 // Illustration of groovy BUG https://jira.codehaus.org/browse/GROOVY-7288
 
 trait Some{
-    static final String STATIC = 'static data' // Commenting it out make it work
-
-    String so(){
-        println ('STATIC=' + STATIC)
-    }
+    String field = 'static data' // Commenting it out make it work
 }
 
 class Delegator implements Some{
