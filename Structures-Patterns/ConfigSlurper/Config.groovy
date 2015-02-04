@@ -20,8 +20,8 @@ config {
 	digitsMixMap = [
 		one: 11
 		,two: 2
-		,three: one + digits.two
-		,four: one + digits.two + digitsMap.three
+		,three: one + digits.d_two
+		,four: one + digits.d_two + digitsMap.three
 		,typed: new Test()
 	]
 
@@ -30,9 +30,12 @@ config {
 	three = one + two
 
 	digits {
-		one = 1
-		two = 2
-		three = one + two
+		d_one = 3
+		d_two = 4
+// All 3 variants work
+//		d_three = one + d_two
+//		d_three = one + digits.d_two
+		d_three = one + config.digits.d_two
 	}
 
 	digitsMap = [
@@ -44,8 +47,8 @@ config {
 	digitsMix{
 		one = 11
 		two = 2
-		three = one + digits.two
-		four = one + digits.two + digitsMap.three
+		three = one + digits.d_two
+		four = one + digits.d_two + digitsMap.three
 		typed = new Test()
 	}
 }

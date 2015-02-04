@@ -6,9 +6,9 @@ println "config.one=${config.one}"
 println "config.two=${config.two}"
 println "config.three=${config.three}"
 println '====='
-println "config.digits.one=${config.digits.one}"
-println "config.digits.two=${config.digits.two}"
-println "config.digits.three=${config.digits.three}"
+println "config.digits.d_one=${config.digits.d_one}"
+println "config.digits.d_two=${config.digits.d_two}"
+println "config.digits.d_three=${config.digits.d_three}"
 println '====='
 println "config.digitsMap.one=${config.digitsMap.one}"
 println "config.digitsMap.two=${config.digitsMap.two}"
