@@ -1,0 +1,7 @@
+#!/bin/bash
+
+GROOVY=$( ls -1 /usr/share/groovy/embeddable/groovy-all-2.?.?.jar )
+
+javac -cp $GROOVY test/GroovyRun.java
+
+java -cp .:$GROOVY test.GroovyRun
