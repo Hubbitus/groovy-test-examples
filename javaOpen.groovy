@@ -2,8 +2,9 @@
 
 import java.awt.Desktop;
 
-File f = new File ("/home/pasha/temp/groovy-test/test.xls");
-String path = "/home/pasha/temp/groovy-test/test.xls";
+String path = '/home/pasha/temp/test.xls';
+File f = new File (path);
+
 
         try {
             if(Desktop.isDesktopSupported()) {
