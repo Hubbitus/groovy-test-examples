@@ -1,0 +1,3 @@
+
+groovy -cp /home/pasha/temp/gssh.jar ssh.groovy
+#groovy -cp /home/pasha/temp/gssh.jar ssh.groovy.Java
