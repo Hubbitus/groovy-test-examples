@@ -1,0 +1,62 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'atlassian-public'
+//        url 'https://m2proxy.atlassian.com/repository/public'
+        url 'https://packages.atlassian.com/artifactory/maven-external'
+    }
+    mavenLocal()
+
+    dependencies {
+        implementation 'org.apache.groovy:groovy-all:4.0.21'
+
+        testImplementation 'org.spockframework:spock-core:2.4-M4-groovy-4.0'
+        testRuntimeOnly 'net.bytebuddy:byte-buddy:1.14.17' // allows mocking of classes (in addition to interfaces)
+        testRuntimeOnly "org.objenesis:objenesis:3.4"      // allows mocking of classes without default constructor (together with ByteBuddy or CGLIB)
+
+        testRuntimeOnly 'org.apache.logging.log4j:log4j-core:2.23.1'
+
+        // JIRA
+        implementation 'com.atlassian.jira:jira-api:9.13.0-QR-20230920080257'
+
+        // GidMost
+        implementation 'org.slf4j:slf4j-api:2.0.13' // version 1.7.28 from dependencies did not found!
+        implementation 'ru.mail.im:bot-api:1.2.3'
+        // Unspecified in bot deps, but required at runtime:
+        implementation 'com.google.code.gson:gson:2.11.0'
+        implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+
+        // YAML conversion:
+        implementation 'com.vladsch.flexmark:flexmark-html2md-converter:0.64.8'
+        implementation 'org.yaml:snakeyaml:2.2'
+    }
+}
+
+
+group 'info.hubbitus.jira-gidmost-integration'
+version '1.0.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    events "passed", "skipped", "failed"
+  }
+}

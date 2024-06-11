@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="groovy-4.0.2" level="project" />
+    <orderEntry type="library" name="apache.ivy" level="project" />
+    <orderEntry type="module-library">
+      <library name="Grab:slf4j-api-2.0.13.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.slf4j/slf4j-api/jars/slf4j-api-2.0.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="bot-api-1.2.3" level="project" />
+    <orderEntry type="module-library">
+      <library name="Grab:gson-2.11.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.google.code.gson/gson/jars/gson-2.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:error_prone_annotations-2.27.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.27.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:okhttp-4.12.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.squareup.okhttp3/okhttp/jars/okhttp-4.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:okio-3.6.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.squareup.okio/okio/jars/okio-3.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:okio-jvm-3.6.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.squareup.okio/okio-jvm/jars/okio-jvm-3.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:kotlin-stdlib-common-1.9.10.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jetbrains.kotlin/kotlin-stdlib-common/jars/kotlin-stdlib-common-1.9.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:kotlin-stdlib-jdk8-1.8.21.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jetbrains.kotlin/kotlin-stdlib-jdk8/jars/kotlin-stdlib-jdk8-1.8.21.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:kotlin-stdlib-1.8.21.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jetbrains.kotlin/kotlin-stdlib/jars/kotlin-stdlib-1.8.21.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:annotations-13.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jetbrains/annotations/jars/annotations-13.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:kotlin-stdlib-jdk7-1.8.21.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jetbrains.kotlin/kotlin-stdlib-jdk7/jars/kotlin-stdlib-jdk7-1.8.21.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:copy_down-1.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/io.github.furstenheim/copy_down/jars/copy_down-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/copy_down-1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:jsoup-1.15.2.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jsoup/jsoup/jars/jsoup-1.15.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-html2md-converter-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-html2md-converter/jars/flexmark-html2md-converter-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/flexmark-html2md-converter-0.64.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util/jars/flexmark-util-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-ast-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-ast/jars/flexmark-util-ast-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-collection-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-collection/jars/flexmark-util-collection-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-misc-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-misc/jars/flexmark-util-misc-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:annotations-24.0.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jetbrains/annotations/jars/annotations-24.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-data-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-data/jars/flexmark-util-data-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-sequence-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-sequence/jars/flexmark-util-sequence-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-visitor-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-visitor/jars/flexmark-util-visitor-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-builder-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-builder/jars/flexmark-util-builder-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-dependency-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-dependency/jars/flexmark-util-dependency-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-format-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-format/jars/flexmark-util-format-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-html-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-html/jars/flexmark-util-html-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-util-options-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-util-options/jars/flexmark-util-options-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark/jars/flexmark-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/flexmark-0.64.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-ext-emoji-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-ext-emoji/jars/flexmark-ext-emoji-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/flexmark-ext-emoji-0.64.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-jira-converter-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-jira-converter/jars/flexmark-jira-converter-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-ext-gfm-strikethrough-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough/jars/flexmark-ext-gfm-strikethrough-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-ext-tables-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-ext-tables/jars/flexmark-ext-tables-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-ext-wikilink-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-ext-wikilink/jars/flexmark-ext-wikilink-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-ext-ins-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-ext-ins/jars/flexmark-ext-ins-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:flexmark-ext-superscript-0.64.8.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.vladsch.flexmark/flexmark-ext-superscript/jars/flexmark-ext-superscript-0.64.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:jsoup-1.15.4.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.jsoup/jsoup/jars/jsoup-1.15.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:snakeyaml-2.2.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.yaml/snakeyaml/jars/snakeyaml-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
