@@ -71,7 +71,8 @@ class JiraHelpers {
     * @param issue
     **/
     public static EventType getEventType(IssueEvent event){
-        return ComponentAccessor.getEventTypeManager().getEventTypes().find{ it.id == event.getEventTypeId() }
+//        return ComponentAccessor.getEventTypeManager().getEventTypes().find{ it.id == event.getEventTypeId() }
+        return ComponentAccessor.getEventTypeManager().getEventType(event.getEventTypeId()) // By https://community.atlassian.com/t5/App-Central-questions/Re-Scriptrunner-Script-Listener-not-working-on-Workflow/qaq-p/860074/comment-id/9340#M9340
     }
 }
 

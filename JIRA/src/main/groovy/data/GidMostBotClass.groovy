@@ -7,6 +7,9 @@ import data.yaml.GidHtmlConverterCoreNodeRendererFactory
 import data.yaml.GidHtmlConverterCoreNodeRendererClass
 import data.yaml.GidHtmlConverterCoreNodeRenderer
 
+import data.RemoteDebugSendClass
+import data.RemoteDebugSend
+
 import groovy.util.logging.Log4j
 
 import static data.yaml.GidHtmlConverterCoreNodeRenderer.escapeMarkdown
@@ -50,40 +53,58 @@ class GidMostBot {
     private String botToken
     private String chatId
 
-    public GidMostBot(String botToken, String chatId){
+    GidMostBot(String botToken, String chatId){
         this.botToken = botToken
         this.chatId   = chatId
     }
 
-    public static String formatMdHeaderCreate(IssueEvent event){
-        """*Новый алерт ${JiraHelpers.formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»
+    static String formatMdHeaderCreate(IssueEvent event){
+        """*Новый алерт ${formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»
 _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join(', ')}
 --------------------
 """
     }
 
-    public static String formatMdHeaderChange(IssueEvent event){
-        """*Изменение алерта ${JiraHelpers.formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»
+    static String formatMdHeaderChange(IssueEvent event){
+        """*Изменение алерта ${formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»
 _Изменения_ (${getEventType(event)?.name}) от ${event?.user?.displayName}"""
     }
 
-    public static String formatMdIssueChangeDetails(IssueEvent event){
+    static String formatMdIssueChangeDetails(IssueEvent event){
         """:
 ${// By https://stackoverflow.com/questions/36668135/how-to-get-a-list-of-modified-fields-with-scriptrunner-on-issueupdated-event/36729350#36729350
     event.getChangeLog()?.getRelated('ChildChangeItem')?.collect { change ->
-//        log.warn(change)
-        "- __${escapeMarkdown(change['field'])}__: «${escapeMarkdown(change['oldstring'])?.trim()}» ➫ «${escapeMarkdown(change['newstring'])?.trim()}»"
+        log.warn("Issue change: ${change}")
+        "- __${escapeMarkdown(change['field'] as String)}__: «${escapeMarkdown(change['oldstring'] as String)?.trim()}» ➫ «${escapeMarkdown(change['newstring'] as String)?.trim()}»"
     }?.join('\n')
 }"""
     }
 
-    public static String formatMdCommentChange(IssueEvent event, String header='Новый комментарий'){
-        """*${header} от _${event?.user?.displayName}_ в ${JiraHelpers.formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»:
+    static String formatMdCommentChange(IssueEvent event, String header='Новый комментарий'){
+        """*${header} от _${event?.user?.displayName}_ в ${formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»:
 """
     }
 
-    public def processIssueChanges(IssueEvent event){
+    static String formatMdHeaderDelete(IssueEvent event){
+        """*Удалён алерт ${formatIssueMdLink(event.issue)}*: «__${escapeMarkdown(event.issue.summary)}__»
+_Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join(', ')}
+--------------------
+"""
+    }
+
+    /**
+    * Main horse: process various event changes.
+    * @param event
+    * @param bundle
+    **/
+    def processIssueChanges(IssueEvent event, def bundle){
         log.warn("Process issue [${event.issue}] event: ${event} with type [${getEventType(event)}]")
+//        log.warn("Events bundle:\n[${RemoteDebugSend.toYAML(bundle, true)}]") // TODO why not work?
+        bundle.events.each{ includedEvent ->
+            log.warn("\tBundle event: ${event} with type [${getEventType(event)}]")
+        } as List<IssueEvent>
+
+        //noinspection GroovyFallthrough
         switch (event.getEventTypeId()){ // https://docs.atlassian.com/software/jira/docs/api/7.0.8/com/atlassian/jira/event/type/EventType.html
             case EventType.ISSUE_CREATED_ID:
                 sendMarkdownTextWithFallback(
@@ -98,24 +119,41 @@ ${// By https://stackoverflow.com/questions/36668135/how-to-get-a-list-of-modifi
             case EventType.ISSUE_RESOLVED_ID:
             case EventType.ISSUE_CLOSED_ID:
             case EventType.ISSUE_REOPENED_ID:
-            case EventType.ISSUE_DELETED_ID:
             case EventType.ISSUE_MOVED_ID:
             case EventType.ISSUE_ARCHIVED_ID:
+            case EventType.ISSUE_GENERICEVENT_ID:
                 sendMarkdownTextWithFallback(
                     formatMdHeaderChange(event),
                     formatMdIssueChangeDetails(event),
                     '*Error process changes of issue in rich format for GidMost*'
                 )
+                break
 
+            case EventType.ISSUE_DELETED_ID:
+                sendMarkdownTextWithFallback(
+                    formatMdHeaderDelete(event),
+                    convertHtmlToMostMarkdown(getIssueDescriptionInHTML(event.issue)),
+                    '*Error convert issue description for GidMost*'
+                )
                 break
 
             case EventType.ISSUE_COMMENTED_ID:
-                log.warn("Issue comment HTML: ${renderJiraMarkupToHTML(event?.comment?.body)}")
-                sendMarkdownTextWithFallback(
-                     formatMdCommentChange(event, 'Добавлен комментарий'),
-                     convertHtmlToMostMarkdown(renderJiraMarkupToHTML(event?.comment?.body)),
-                    '*Error convert comment to rich format for GidMost*'
-                )
+                String comment = renderJiraMarkupToHTML(event?.comment?.body).trim()
+                if (comment) {
+                    log.warn("Issue comment HTML: ${comment}")
+                    sendMarkdownTextWithFallback(
+                        formatMdCommentChange(event, 'Добавлен комментарий'),
+                        convertHtmlToMostMarkdown(renderJiraMarkupToHTML(event?.comment?.body)),
+                        '*Error convert comment to rich format for GidMost*'
+                    )
+                }
+                else {
+                    /**
+                    * Due to the JIRA bugs: https://jira.atlassian.com/browse/JRASERVER-62351 and https://jira.atlassian.com/browse/JRASERVER-59999 IssueComment is not triggered automatically.
+                    * Such manual event is workaround (we will ignore empty comments in listener).
+                    **/
+                    log.warn('Issue comment is empty, skipping')
+                }
                 break
             case EventType.ISSUE_COMMENT_DELETED_ID:
                 sendMarkdownTextWithFallback(
@@ -134,19 +172,19 @@ ${// By https://stackoverflow.com/questions/36668135/how-to-get-a-list-of-modifi
                 break
 
             default:
-                sendMarkdownTextWithFallback("Unsupported event: ${event}", "Unsupported event")
+                sendMarkdownTextWithFallback("Unsupported event type [${escapeMarkdown(getEventType(event) as String)}]", "Unsupported event")
                 throw new IllegalArgumentException("Unsupported event: ${event}")
         }
     }
 
-    public static String convertHtmlToMostMarkdown(String html){
+    static String convertHtmlToMostMarkdown(String html){
         MutableDataSet mdOptions = new MutableDataSet()
         mdOptions.set(FlexmarkHtmlConverter.THEMATIC_BREAK, '--------------------')
         mdOptions.set(FlexmarkHtmlConverter.UNORDERED_LIST_DELIMITER, (char)'-')
         mdOptions.set(FlexmarkHtmlConverter.SKIP_CHAR_ESCAPE, true)
 
         // Prepare HTML from JIRA. Sometimes {{ }} does not converted in any code, we want inline it
-        html = html.replaceAll(/\{\{/, '<ins>').replaceAll(/\}\}/, '</ins>')
+        html = html.replaceAll(/\{\{/, '<ins>').replaceAll(/}}/, '</ins>')
         html = escapeMarkdown(html)
 
         FlexmarkHtmlConverter.Builder builder = FlexmarkHtmlConverter.builder(mdOptions)
