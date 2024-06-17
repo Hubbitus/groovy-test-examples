@@ -28,25 +28,25 @@ class JiraHelpers {
     * @param issue
     * @return Description rendered in HTML
     **/
-    public static String getIssueDescriptionInHTML(Issue issue){
+    static String getIssueDescriptionInHTML(Issue issue){
         def fieldLayoutItem = ComponentAccessor.getFieldLayoutManager().getFieldLayout(issue).getFieldLayoutItem("description")
         NavigableField navigableField = (NavigableField)ComponentAccessor.getFieldManager().getField("description")
         return navigableField.getColumnViewHtml(fieldLayoutItem, new HashMap(), issue)
     }
 
     /**
-     * Render WIKI JIRA format into HTML
-     * @link by https://stackoverflow.com/questions/70334647/convert-plain-text-wiki-syntax-to-html-with-jira-scriptrunner-show-bullet-poi/70368183#70368183
-     * @param jiraMarkup
-     * @return HTML markup in string
-     */
-    public static String renderJiraMarkupToHTML(String jiraMarkup){
+    * Render WIKI JIRA format into HTML
+    * @link by https://stackoverflow.com/questions/70334647/convert-plain-text-wiki-syntax-to-html-with-jira-scriptrunner-show-bullet-poi/70368183#70368183
+    * @param jiraMarkup
+    * @return HTML markup in string
+    **/
+    static String renderJiraMarkupToHTML(String jiraMarkup){
         RendererManager rendererManager = ComponentAccessor.getComponentOfType(RendererManager.class)
-        JiraRendererPlugin renderer = rendererManager.getRendererForType("atlassian-wiki-renderer");
+        JiraRendererPlugin renderer = rendererManager.getRendererForType("atlassian-wiki-renderer")
         return renderer.render(jiraMarkup, null)
     }
 
-    public static String getJiraBaseUrl(){
+    static String getJiraBaseUrl(){
         ComponentAccessor.getApplicationProperties().getString(APKeys.JIRA_BASEURL)
     }
 
@@ -54,7 +54,7 @@ class JiraHelpers {
     * Return URL to issue in Jira
     * @param issue
     **/
-    public static String formatIssueLink(Issue issue){
+    static String formatIssueLink(Issue issue){
         "${getJiraBaseUrl()}/browse/${issue.key}"
     }
 
@@ -62,7 +62,7 @@ class JiraHelpers {
     * Format as Markdown issue link
     * @param issue
     **/
-    public static String formatIssueMdLink(Issue issue){
+    static String formatIssueMdLink(Issue issue){
         "[${issue.key}](${formatIssueLink(issue)})"
     }
 
@@ -70,7 +70,7 @@ class JiraHelpers {
     * @link by https://community.atlassian.com/t5/Jira-questions/Getting-an-Event-Name-via-Groovy/qaq-p/1118632
     * @param issue
     **/
-    public static EventType getEventType(IssueEvent event){
+    static EventType getEventType(IssueEvent event){
 //        return ComponentAccessor.getEventTypeManager().getEventTypes().find{ it.id == event.getEventTypeId() }
         return ComponentAccessor.getEventTypeManager().getEventType(event.getEventTypeId()) // By https://community.atlassian.com/t5/App-Central-questions/Re-Scriptrunner-Script-Listener-not-working-on-Workflow/qaq-p/860074/comment-id/9340#M9340
     }

@@ -50,6 +50,8 @@ import com.vladsch.flexmark.util.data.MutableDataSet
 class GidMostBot {
     public final static String BOT_BASE_URL = 'https://api.most.gid.ru/'
 
+    public static final Closure<Boolean> FILTER_EVENTS = {IssueEvent event -> event.issue.issueType.name == 'Alert'}
+
     private String botToken
     private String chatId
 
@@ -71,13 +73,20 @@ _Изменения_ (${getEventType(event)?.name}) от ${event?.user?.displayN
     }
 
     static String formatMdIssueChangeDetails(IssueEvent event){
-        """:
-${// By https://stackoverflow.com/questions/36668135/how-to-get-a-list-of-modified-fields-with-scriptrunner-on-issueupdated-event/36729350#36729350
-    event.getChangeLog()?.getRelated('ChildChangeItem')?.collect { change ->
-        log.warn("Issue change: ${change}")
-        "- __${escapeMarkdown(change['field'] as String)}__: «${escapeMarkdown(change['oldstring'] as String)?.trim()}» ➫ «${escapeMarkdown(change['newstring'] as String)?.trim()}»"
-    }?.join('\n')
-}"""
+        // By https://stackoverflow.com/questions/36668135/how-to-get-a-list-of-modified-fields-with-scriptrunner-on-issueupdated-event/36729350#36729350
+        def changes = event.getChangeLog()?.getRelated('ChildChangeItem')
+        ':\n' +
+            changes?.findAll{ ch -> !(ch['field'].toString() in ['Итоговый результат', 'description'])}?.collect { change ->
+                log.warn("Issue change: ${change}")
+                "- __${escapeMarkdown(change['field'] as String)}__: «${escapeMarkdown(change['oldstring'] as String)?.trim()}» ➫ «${escapeMarkdown(change['newstring'] as String)?.trim()}»"
+            }?.join('\n') + '\n' +
+            // Render into Markdown text fields with markup:
+            changes?.findAll{ ch -> ch['field'].toString() in ['Итоговый результат', 'description']}?.collect { change ->
+                log.warn("Issue change: ${change}")
+                """*__${escapeMarkdown(change['field'] as String)}__*:
+${convertHtmlToMostMarkdown(renderJiraMarkupToHTML(change['newstring'] as String))?.trim()}"""
+            }?.join('\n') +
+            (event.comment?.body ?"\n*__Комментарий__*: ${convertHtmlToMostMarkdown(renderJiraMarkupToHTML(event?.comment?.body).trim())}": '')
     }
 
     static String formatMdCommentChange(IssueEvent event, String header='Новый комментарий'){
@@ -98,11 +107,15 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
     * @param bundle
     **/
     def processIssueChanges(IssueEvent event, def bundle){
-        log.warn("Process issue [${event.issue}] event: ${event} with type [${getEventType(event)}]")
+        log.warn("Process issue [${event.issue}] event: ${event} with type [${getEventType(event)}];")
+        if (!FILTER_EVENTS(event)) {
+            log.warn('\tSkipping process issue by FILTER_EVENTS')
+            return
+        }
 //        log.warn("Events bundle:\n[${RemoteDebugSend.toYAML(bundle, true)}]") // TODO why not work?
         bundle.events.each{ includedEvent ->
             log.warn("\tBundle event: ${event} with type [${getEventType(event)}]")
-        } as List<IssueEvent>
+        }
 
         //noinspection GroovyFallthrough
         switch (event.getEventTypeId()){ // https://docs.atlassian.com/software/jira/docs/api/7.0.8/com/atlassian/jira/event/type/EventType.html
@@ -143,7 +156,7 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
                     log.warn("Issue comment HTML: ${comment}")
                     sendMarkdownTextWithFallback(
                         formatMdCommentChange(event, 'Добавлен комментарий'),
-                        convertHtmlToMostMarkdown(renderJiraMarkupToHTML(event?.comment?.body)),
+                        convertHtmlToMostMarkdown(comment),
                         '*Error convert comment to rich format for GidMost*'
                     )
                 }
