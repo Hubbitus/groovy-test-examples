@@ -1,5 +1,6 @@
 package data
 
+import com.google.protobuf.Api
 import data.yaml.GidHtmlConverterCoreNodeRendererFactoryClass
 import data.yaml.GidHtmlConverterCoreNodeRendererFactory
 
@@ -11,6 +12,7 @@ import data.RemoteDebugSendClass
 import data.RemoteDebugSend
 
 import groovy.util.logging.Log4j
+import ru.mail.im.botapi.response.ApiResponse
 
 import static data.yaml.GidHtmlConverterCoreNodeRenderer.escapeMarkdown
 
@@ -123,7 +125,7 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
                 sendMarkdownTextWithFallback(
                     formatMdHeaderCreate(event),
                     convertHtmlToMostMarkdown(getIssueDescriptionInHTML(event.issue)),
-                    '*Error convert issue description for GidMost*'
+                    '*⚠Error convert issue description for GidMost⚠*'
                 )
                 break
 
@@ -138,7 +140,7 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
                 sendMarkdownTextWithFallback(
                     formatMdHeaderChange(event),
                     formatMdIssueChangeDetails(event),
-                    '*Error process changes of issue in rich format for GidMost*'
+                    '*⚠Error process changes of issue in rich format for GidMost⚠*'
                 )
                 break
 
@@ -146,7 +148,7 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
                 sendMarkdownTextWithFallback(
                     formatMdHeaderDelete(event),
                     convertHtmlToMostMarkdown(getIssueDescriptionInHTML(event.issue)),
-                    '*Error convert issue description for GidMost*'
+                    '*⚠Error convert issue description for GidMost⚠*'
                 )
                 break
 
@@ -157,7 +159,7 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
                     sendMarkdownTextWithFallback(
                         formatMdCommentChange(event, 'Добавлен комментарий'),
                         convertHtmlToMostMarkdown(comment),
-                        '*Error convert comment to rich format for GidMost*'
+                        '*⚠Error convert comment to rich format for GidMost⚠*'
                     )
                 }
                 else {
@@ -213,13 +215,13 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
     *
     * @param markdownDesired Markdown to send. Most probably that converted comment or description from the issue. If some conversion performed incorrectly blind "Format error" happened
     * @param markdownMinimal Fallback markdown. Please provide there minimal formating and ensure it is correct!
-    * @return MessageResponse
+    * @return ApiResponse
     **/
-    MessageResponse sendMarkdownTextWithFallback(String markdownDesired, String markdownMinimal){
-        MessageResponse res = sendMarkdownText(markdownDesired)
+    ApiResponse sendMarkdownTextWithFallback(String markdownDesired, String markdownMinimal){
+        ApiResponse res = sendMarkdownText(markdownDesired)
         if (!res.ok){
             // Fallback to send just event, without issue description
-            res = sendMarkdownText(markdownMinimal)
+            res = sendMarkdownText(markdownMinimal + ': ' + res.description)
         }
         return res
     }
@@ -238,7 +240,7 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
     * @param markdownMinimalAddon
     * @return message sent result
     **/
-    MessageResponse sendMarkdownTextWithFallback(String markdownHeader, String markdownDesiredAddon, String markdownMinimalAddon){
+    ApiResponse sendMarkdownTextWithFallback(String markdownHeader, String markdownDesiredAddon, String markdownMinimalAddon){
         return sendMarkdownTextWithFallback(markdownHeader + markdownDesiredAddon, markdownHeader + markdownMinimalAddon)
     }
 
@@ -247,24 +249,32 @@ _Labels_: ${event.issue.labels.collect{"`${escapeMarkdown(it as String)}`"}.join
     * No need to maintain the session - we connect, send message and then perform disconnection
     * @see #sendMarkdownTextWithFallback
     * @param markdown text to send
-    * @return MessageResponse object. Please check at least `ok` field of that for the result. Really sending is very fragile and you frequently may got "Format error"
+    * @return ApiResponse object. Please check at least `ok` field of that for the result. Really sending is very fragile and you frequently may got "Format error"
     **/
-    MessageResponse sendMarkdownText(String markdown){
+    ApiResponse sendMarkdownText(String markdown){
         log.warn("Sending markdown: \n${markdown}")
         BotApiClient client = new BotApiClient(BOT_BASE_URL, botToken)
         BotApiClientController controller = BotApiClientController.startBot(client)
 
-        MessageResponse resp = controller.sendTextMessage(
-            new SendTextRequest()
-              .setChatId(chatId)
-              .setParseMode('MarkdownV2').setText(markdown)
-        )
-
-        if (!resp.ok){
-            log.error("GidMost failed to send message: ${resp.description}")
+        try {
+            MessageResponse resp = controller.sendTextMessage(
+                new SendTextRequest()
+                    .setChatId(chatId)
+                    .setParseMode('MarkdownV2').setText(markdown)
+            )
+            if (!resp.ok) {
+                log.error("GidMost failed to send message: ${resp.description}")
+            }
+            client.stop()
+            return resp
         }
-        client.stop() // stop when work done
-        return resp
+        catch (Exception e){
+            log.error("GidMost failed to send message (Exception happened): ${e.message}")
+            return new ApiResponse(ok: false, description: e.message)
+        }
+        finally {
+            client.stop() // stop when work done
+        }
     }
 }
 
